@@ -1,0 +1,3 @@
+->Create triggers for nulls before insert on table as tables are taking empty string " " and "Null" and "null" as values too.
+->Foreign key errors on date datatype (start_date in scheduled_courses referred in enrolled_courses)
+->create stored procedure for autoincrement with Q1001 in question_bank_details table  

@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans Pro'>
+    </head>
+    <style>
+        input[type="submit"]
+        {
+        background-color:forestgreen;
+        font-family:"Source Sans Pro";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        border-radius: 7px;
+        height: 50px;
+        width: 100px;			
+        cursor: pointer;
+        padding-left: 5px;
+        }    
+        input[type="reset"]
+        {
+            font-family:"Source Sans Pro";
+            background-color:red;
+            font-weight:bold;
+            font-size:15px;
+            color:white;
+            border-radius:7px;
+            height: 50px;
+            width:100px;			
+            cursor: pointer;
+            margin-left:20px;
+            padding-left: 5px;
+        }
+        table{
+            float: center;
+            margin-left: 30%;
+        }
+        input{
+            padding-left: 10px;
+            width: 100%;
+            height: 100%;
+
+        }
+        ::placeholder{
+            font-size: 15px;
+            color:lightgrey;
+            font-family: 'Source Sans Pro';
+        }
+        h2{
+            font-weight:bold;
+            text-align: justify;
+            margin-left: 25%;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        table td,tr{
+            font-size: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <body>
+        <h2>Add New Trainer</h2>
+        <form name='add_trainer' method='post' action='trainer_validate.php'>
+            <table name='trainer_table' id='table1'>
+                <tr><td colspan ='2'>Trainer Email</td>
+                    <td colspan ='2'><input type='text' name='trainer_email' required placeholder="Enter Trainer Email"/></td>
+                </tr>
+        
+                <tr>
+                    <td colspan = '2'>Phone Number</td>
+                    <td colspan="2"><input type=text' name='phone' required placeholder="Enter phone number"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan = '2'>Experience</td>
+                    <td colspan="2"><input type='float' name='exp' required placeholder="Enter experience in years"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan = '2'>Skill Sets</td>
+                    <td colspan="2">
+                        <select multiple size="6" name='skills' id='skills' required>
+                        <option value='java'>Java</option>
+                        <option value='Python'>Python</option>
+                        <option value='ca'>Current Affairs</option>
+                        <option value='polsc'>Political Science</option>
+                        <option value='cc'>Cloud Computing</option>
+                        <option value='evs'>Environmental Science</option>
+                        </select>    
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="1">
+                        <input type='submit' name='add' value="Add Trainer">
+                    </td>
+                    <td colspan="1">
+                        <input type='reset' name='reset' value='Reset'> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script src='jquery-3.5.0.js'></script>
+        <script src='script.js'></script>
+
+        <p></p>
+
+    </body>
+
+
+
+</html>

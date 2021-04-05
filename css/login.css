@@ -1,0 +1,59 @@
+div.a{
+    font-family: "Source Sans Pro";
+    background-color: deepskyblue;
+    padding :10px;
+    height:70px;
+    }
+body{
+    background-color:aliceblue;
+    font-family: 'Source Sans Pro';
+    margin: 0px;
+}
+::placeholder{
+    color:lightgrey;
+    font-family:"Source Sans Pro";
+    font-size:10px
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    font-family:"Source Sans Pro";
+}
+input[type="submit"]
+        {
+        background-color:forestgreen;
+        font-family:"Source Sans Pro";
+        font-weight: bold;
+        font-size: 13.5px;
+        color: white;
+        border-radius: 7px;
+        height: 30px;
+        width: 80px;			
+        cursor: pointer;
+        }    
+input[type="reset"]
+        {
+            font-family:"Source Sans Pro";
+            background-color:red;
+            font-weight:bold;
+            font-size:13.5px;
+            color:white;
+            border-radius:7px;
+            height: 30px;
+            width:80px;			
+            cursor: pointer;
+            margin-left:20px;
+        }
+
+header{
+    letter-Spacing: 3px;
+    padding: 0.6px;
+    background-color : #6ab8db;
+    padding-left: 10px;
+}        
+
+h1{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 50px;
+}

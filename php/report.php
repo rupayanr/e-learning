@@ -1,0 +1,1 @@
+<?php echo '<script> alert("You are in generate reports module") </script>'?>

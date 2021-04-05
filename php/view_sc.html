@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View Scheduled Courses</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans Pro'>
+        <script defer src="jquery-3.5.0.js"></script>
+       
+    </head>
+
+    <style>
+        table{
+        padding-top: 5px;
+		width: 70%;
+		height: 50px;
+		border-color: white;
+		margin-left: 25%;
+		margin-right: 25%
+        }
+
+        th{
+        background-color: black;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		height: 25px;
+        }
+
+        h2{
+		font-weight: bold;
+		text-align: justify;
+		margin-left: 22%;
+        }
+        
+        td{
+            background-color: white;
+            text-align: center;
+        }
+
+        tr.disabled{
+            background-color: grey;
+        }
+
+    </style>
+
+    <body>
+        <h2>Scheduled Courses</h2>
+        <form name="scheduled_courses" id="scheduled_courses" method="POST">
+            <table id="sc_table" border="1"> 
+                <tr>
+                    <th>Select</th><th>Course Name</th><th>Start Date</th><th>End Date</th><th>Assessment</th><th>Trainer</th><th>Seats Availability</th>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
